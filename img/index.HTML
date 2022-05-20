@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<style>
+		
+		body {
+			background-color: beige;
+		}
+		h1 {
+			color: burlywood;
+		}
+		.incLetterSpacing { letter-spacing: 5px; }
+		b{
+			color: brown;
+		}
+		#shadow_02 { text-shadow: 2px 2px orange; }
+		.profile
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+ul {
+			background-color: #FFDAB9;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		li { float: left; }
+		li a {
+			display: block;
+			background-color: #FFDAB9;
+			color: #000000;
+			padding: 8px;
+			text-decoration: none;
+			text-align: center;
+			font-weight: bold;
+		}
+		li a:hover {
+			background-color: #CD853F;
+			color: white;
+		}
+		
+		nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+
+        }
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #main-menu>li {
+            float: left;
+            position: relative;
+        }
+
+        #main-menu>li>a {
+            font-size: 0.70rem;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            display: block;
+            padding: 14px 36px;
+            border-right: 1px solid rgba(0, 0, 0, 0.15);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        #main-menu>li:nth-child(1)>a {
+            border-left: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        #sub-menu {
+            position: absolute;
+            background: white;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.15s ease-in;
+            border: 1px solid black;
+        }
+
+        #sub-menu>li {
+            padding: 16px 28px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        #sub-menu>li>a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #main-menu>li:hover #sub-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #sub-menu>li>a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            column-width: 15em;
+            padding: 2em 12em;
+        }
+		div {
+			border: 3px solid orange;
+
+			width: 300px;
+			overflow: auto;
+		}
+		#both { resize: both; }
+		#ddd{
+			position: fixed;
+			top: 0;
+			right: 0;
+			margin-top: 320px;
+			margin-right: 300px;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+</head>
+<body>
+
+	<img src="dmddo.png" style="width: 10000px; height: 300px;">
+	<h1 id="shadow_02">프로그래밍 공부</h1>
+	<a id="ddd" href="http://127.0.0.1:5500/img/login.HTML">로그인 하러 가기</a>
+	<h2>간단한 자기 소개</h2>
+	<p>성일정보고에 재학중인 21501강주훈 이라고 합니다. 보안에 관심이 있고</p>
+	<p>현재 안드로이드 개발과 리버싱 엔지니어링을 공부하고 있습니다.</p>
+	<p>지금 배우고 있는건 AWS이고 기회가 된다면 루즈베리 파이를 배워 보고 싶습니다</p> <br>
+<p>
+	<li><a href="#"> <a href="https://codeup.kr/problemsetsol.php?psid=23">C </a></a>
+		<ul id="sub-menu">
+			<li><a href="#" aria-label="subemnu">c언어 100문제</a></li>
+		</ul>
+	</li>
+
+	<li><a href="#"><a href=https://youtu.be/jdTsJzXmgU0>JAVA</a></a>
+		<ul id="sub-menu">
+			<li><a href="#" aria-label="subemnu">생활코딩</a></li>
+		</ul>
+
+	</li>
+
+	<li><a href="#"> <a href=https://dreamhack.io>드림핵</a></a>
+		<ul id="sub-menu">
+			<li><a href="#" aria-label="subemnu">드림해커 로직</a></li>
+		</ul>
+
+	</li>
+	<li><a href="#"> <a href="https://codeup.kr/problemsetsol.php?psid=33">Python</a></a>
+		<ul id="sub-menu">
+			<li><a href="#" aria-label="subemnu">파이썬 100문제</a></li>
+		</ul>
+	</li>
+</p><br>
+	<br><p>이사이트는 제가 <b>프로그래밍</b> 언어를 공부 할 때 쓴 사이트 들과 .</p>
+	<p>공부에 도움이 되는 사이트 모음 입니다. 여러 언어를 배울 수 있고  깃허브와 블로그가 있으니 돌아보셔도 됩니다.</p>
+
+	<a href="https://github.com/rkdwngns">깃허브 바로가기!</a><br>
+	<a href="https://blog.naver.com/kgus7420">블로그 바로가기!</a>
+
+	<div id="both">남기고 싶은말 적기</div>
+</body>
+</html>
